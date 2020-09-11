@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Services</title>
+
+    <!--===== stylesheets ======-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-rtl.css">
+</head>
+
+<body>
+
+    <!--===== preloader =========-->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary trans" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="shadow"></div>
+    </div>
+
+    <!--===== preloader =========-->
+
+    <!--======= header =========-->
+    <header class="header">
+        <div class="top-bar" :class="{active : isActive}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="topbar-left" id="topBarToggle">
+                            <ul class="contact-us">
+                                <li><i class="fas fa-map-marker-alt"></i> Brooklyn, NY 11230</li>
+                                <li><i class="far fa-clock"></i> 8:00am - 10:00pm</li>
+                                <li><i class="fas fa-phone-alt"></i> إتصل: 800-123-4567</li>
+                                <li><a href="mailto:info@fourthpyramidagcy.com?"><i class="far fa-envelope"></i>إرسل رساله</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="topbar-right">
+                            <div class="socialmedia">
+                                <ul class="socialmedia-ic">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-toggler reveal">
+            <div class="top-bar-toggler-btn" @click="toggleActive" :class="{active: isActive}">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="navigationbar-wrapper">
+            <div class="navigationbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index-rtl.html"><img src="./assets/imgs/logo.png"
+                                alt="Cleaning service logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-around nav-items-wrap" id="navbarToggler">
+                            <ul class="navbar-nav mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index-rtl.html">الرئيسية <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us-rtl.html">عننا</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog-rtl.html">المدونه</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services-rtl.html">الخدمات</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us-rtl.html">تواصل معنا</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials-rtl.html">اراء العملاء</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--======= header =========-->
+
+    
+    <!--===== breadcrumb ======-->
+    <nav class="bread-crumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"> الرئيسية </a></li>
+                <li class="breadcrumb-item active" aria-current="page"> الطلب </li>
+            </ol>
+        </div>
+    </nav>
+    <!--===== breadcrumb ======-->
+
+    <div class="order-form-header">
+        <h2>Order Form</h2>
+    </div>
+
+    <section class="order-form-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="form-wrapper">
+                        <form action="#" method="POST" id="orderForm">
+                            <h3>إحجز الخدمه التي تريدها في دقيقه فقط</h3>
+                            <div class="divider-line"></div>
+                            <div class="form-group">
+                                <h6>معلومات الإتصال</h6>
+                                <p>هذه المعلومات سنستخدمها للتواصل معك</p>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <input type="text" name="name" placeholder="الإسم" class="form-control"
+                                            required>
+                                        <input type="phone" name="phone" placeholder="رقم الهاتف" class="form-control"
+                                            required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <input type="text" name="address" placeholder="العنوان"
+                                            class="form-control" required>
+                                        <input type="email" name="email" placeholder="البريد الإلكتروني" class="form-control"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider-line"></div>
+                            <div class="form-group" id="counting">
+                                <h6>تفاصيل البيت</h6>
+                                <p>أخبرنا عن تقسيمة منزلك</p>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="counter-wrapper">
+                                            <span class="count-btn count-reduce" @click="reduceBedroom"
+                                                :class="!bedrooms ? 'disabled':''">-</span>
+                                            <input type="text" class="counter-input" :value="bedrooms + ' Rooms'"
+                                                name="bedrooms" readonly>
+                                            <span class="count-btn count-add" @click="addBedroom">+</span>
+                                            <div class="input-comment">
+                                                (الغرف تتضمن المطبخ و غرفة المعيشه)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="counter-wrapper">
+                                            <span class="count-btn count-reduce" @click="reduceBathroom"
+                                                :class="!bathrooms ? 'disabled':''">-</span>
+                                            <input type="text" class="counter-input" :value="bathrooms + ' Bathroom'"
+                                                name="bathrooms" readonly>
+                                            <span class="count-btn count-add" @click="addBathroom">+</span>
+                                            <div class="input-comment">
+                                                (round half baths up)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider-line"></div>
+                            <div class="form-group ser-select">
+                                <h6>الخدمة المطلوبه</h6>
+                                <select name="service" id="selectService" class="form-control service-select">
+                                    <option value="" disabled selected>- إختر -</option>
+                                    <option value="Apartment Cleaning">Apartment Cleaning</option>
+                                    <option value="House Cleaning">House Cleaning</option>
+                                    <option value="Сarpet Сleaning">Сarpet Сleaning</option>
+                                </select>
+                            </div>
+                            <div class="divider-line"></div>
+                            <div class="form-group">
+                                <h6>الميعاد</h6>
+                                <p>متى تريدنا أن نبدأ التنظيف؟</p>
+                                <div class="cleaning-date">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <input type="date" name="cleaningDate" class="form-control" required>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-12">
+                                            <div class="time-wrapper">
+                                                <span>أي وقت بين</span>
+                                                <select name="timeFrom" class="form-control">
+                                                    <option value="" selected disabled>من</option>
+                                                    <option value="08:00 am">08:00 am</option>
+                                                    <option value="09:00 am">09:00 am</option>
+                                                    <option value="10:00 am">10:00 am</option>
+                                                    <option value="11:00 am">11:00 am</option>
+                                                    <option value="12:00 pm">12:00 pm</option>
+                                                    <option value="13:00 pm">13:00 pm</option>
+                                                    <option value="14:00 pm">14:00 pm</option>
+                                                    <option value="15:00 pm">15:00 pm</option>
+                                                    <option value="16:00 pm">16:00 pm</option>
+                                                </select>
+                                                <span>-</span>
+                                                <select name="timeTo" class="form-control">
+                                                    <option value="" selected disabled>إلى</option>
+                                                    <option value="08:00 am">08:00 am</option>
+                                                    <option value="09:00 am">09:00 am</option>
+                                                    <option value="10:00 am">10:00 am</option>
+                                                    <option value="11:00 am">11:00 am</option>
+                                                    <option value="12:00 pm">12:00 pm</option>
+                                                    <option value="13:00 pm">13:00 pm</option>
+                                                    <option value="14:00 pm">14:00 pm</option>
+                                                    <option value="15:00 pm">15:00 pm</option>
+                                                    <option value="16:00 pm">16:00 pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider-line"></div>
+                            <div class="radio-buttons-wrap">
+                                <h6>كم مره؟</h6>
+                                <p>It's all about matching you with the perfect cleaner for your home. Scheduling is
+                                    flexible. Cancel or reschedule anytime. </p>
+                                <div class="radio-buttons">
+                                    <div>
+                                        <input type="radio" id="radio1" checked="checked" name="often" value="once">
+                                        <label class="radio-button" for="radio1">
+                                            <b>مره واحده</b>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="radio2" checked="" name="often" value="weekly">
+                                        <label class="radio-button" for="radio2">
+
+                                            <b>أسبوعي</b>
+                                            15.00% Discount
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="radio3" checked="" name="often" value="2 weeks">
+                                        <label class="radio-button" for="radio3">
+
+                                            <b>كل أسبوعين</b>
+                                            10.00% Discount
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="radio4" checked="" name="often" value="monthly">
+                                        <label class="radio-button" for="radio4">
+                                            <b>كل شهر</b>
+                                            5.00% Discount
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider-line"></div>
+                            <div class="submitting">
+                                <p>سنقوم بالتأكيد على طلبك في خلال 24 ساعه!</p>
+                                <input type="submit" class="form-control" name="submit" value="حجز">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 hide-col">
+                    <div class="img-wrapper">
+                        <img src="./assets/imgs/order-form-img.jpg" alt="Order">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--=========== footer ===========-->
+    <footer class="footer wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper first">
+                        <div class="top-img">
+                            <img src="./assets/imgs/footer-ribbon.png" alt="100% Guarantee">
+                        </div>
+                        <div>
+                            <p>
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Cleaning Services</h5>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف الشقق</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف تجاري</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> التنظيف السكني</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> التنظيف في حالة الإنتقال</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف النوافذ</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف السجاد</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف بعد الصيانه</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>تواصل معنا</h5>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> 3261 Anmoore Road Brooklyn, NY 11230
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-phone"></i> 800-123-4567
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <a href="mailto:info@fourthpyramidagcy.com?">
+                                    <i class="far fa-envelope"></i>officeone@youremail.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="far fa-clock"></i> 8:00am - 10:00pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer-wrapper">
+        <div class="container">
+            <div class="bottom-footer">
+                <div class="copywrite">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made
+                        with <i class="icon-heart" aria-hidden="true"></i> by <a
+                            href="https://www.fourthpyramidagcy.com/" class="myself" target="_blank">The Fourth
+                            Pyramid</a>
+                    </p>
+                </div>
+                <div class="footer-socialmedia">
+                    <ul class="socialmedia-ic">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========== footer ===========-->
+
+    <!--======= script files ======-->
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/jQuery 3.4.1.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.animateNumber.min.js"></script>
+    <script src="./assets/js/main-rtl.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

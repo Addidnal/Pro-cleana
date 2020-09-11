@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Services - About Us</title>
+
+    <!--===== stylesheets ======-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+        <!--===== preloader =========-->
+        <div id="overlayer"></div>
+        <div class="loader">
+            <div class="spinner-border text-primary trans" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    
+        <!--===== preloader =========-->
+        
+    <!--======= header =========-->
+    <header class="header">
+        <div class="top-bar" :class="{active : isActive}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="topbar-left" id="topBarToggle">
+                            <ul class="contact-us">
+                                <li><i class="fas fa-map-marker-alt"></i> Brooklyn, NY 11230</li>
+                                <li><i class="far fa-clock"></i> 8:00 am - 10:00 pm</li>
+                                <li><i class="fas fa-phone-alt"></i> Call: 800-123-4567</li>
+                                <li><a href="mailto:info@fourthpyramidagcy.com?"><i
+                                            class="fas fa-phone-alt"></i>Email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="topbar-right">
+                            <div class="socialmedia">
+                                <ul class="socialmedia-ic">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-toggler reveal">
+            <div class="top-bar-toggler-btn" @click="toggleActive" :class="{active: isActive}">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="navigationbar-wrapper">
+            <div class="navigationbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"><img src="./assets/imgs/logo.png"
+                                alt="Cleaning service logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-around nav-items-wrap" id="navbarToggler">
+                            <ul class="navbar-nav mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Our Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contacts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--======= header =========-->
+
+    <!--===== breadcrumb ======-->
+    <nav class="bread-crumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About-us</li>
+            </ol>
+        </div>
+    </nav>
+    <!--===== breadcrumb ======-->
+
+    <!--====== about us =======-->
+    <main>
+        <div class="container">
+            <div class="about-us-page-header">
+                <h2>About Our Company</h2>
+                <p>
+                    Cleaning can be a chore and we know you have many choices when you consider hiring a comprehensive,
+                    high quality, reliable cleaning service.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 some-info-bg"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 some-info-wrapper">
+                    <div class="some-info">
+                        <h4>More than 10 years of cleaning experience</h4>
+                        <p>
+                            Cleaning Company service is a fully integrated janitorial cleaning services company that
+                            provides comprehensive, high quality, reliable cleaning solutions to commercial, corporate,
+                            industrial and residential clients.
+                        </p>
+                        <p>
+                            Our diligent management and work ethic are central to Cleaning Company service business
+                            philosophy and critical to delivering consistent,
+                            quality cleaning services. We pride ourselves on making our management accountable to the
+                            client through direct access and interaction with our managing director.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-mission-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="our-mission">
+                            <div class="icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="info">
+                                <h3>Our Mission</h3>
+                                <p>
+                                    Aims to be a national market leader in the provision of cleaning services delivering reliable, quality, cost effective cleaning solutions to our customers
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="our-mission">
+                            <div class="icon"><i class="fas fa-braille"></i></div>
+                            <div class="info">
+                                <h3>Our Vision</h3>
+                                <p>
+                                    We have more than 215 franchise locations across the United States and Canada. All of them are committed to the same common values and principles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about-us-page-header">
+                <h2>Our Team</h2>
+                <p>
+                    Cleaning Company is a minority owned business with a large group of specially trained, dedicated employees to provide professional service with a personal touch.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="./assets/imgs/person-img-1.jpg" alt="">
+                            <ul class="social-contact">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <h4>Alan Yarbrough</h4>
+                            <h6>Managing Director</h6>
+                        </div>
+                        <div class="dash"></div>
+                        <div class="infos">
+                            <p>
+                                Alan started in 1985 and provides the leadership needed to maintain our reputation and goodwill in the community. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="./assets/imgs/person-img-2.jpg" alt="">
+                            <ul class="social-contact">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <h4>Wilford Wood</h4>
+                            <h6>Customer Service Manager</h6>
+                        </div>
+                        <div class="dash"></div>
+                        <div class="infos">
+                            <p>
+                                He is the direct “pipeline” to our customers to ensure they are being heard and their special needs are being met. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="team-member">
+                        <div class="avatar">
+                            <img src="./assets/imgs/person-img-3.jpg" alt="">
+                            <ul class="social-contact">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <h4>Teresa Phillips</h4>
+                            <h6>Office Administrator</h6>
+                        </div>
+                        <div class="dash"></div>
+                        <div class="infos">
+                            <p>
+                                Teresa joined our team in 2009. She brings a wealth of knowledge and experience in the accounting field.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="about-us-page-header">
+                <h2>Our Values</h2>
+                <p>
+                    Our goal is Your satisfaction (of course after our cleaning work). Office Phone works around the clock (24/7).
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="img-wrapper">
+                        <img src="./assets/imgs/about-page-img-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="right-wrap">
+                        <div>
+                            <h5><i class="fas fa-leaf"></i> Client oriented</h5>
+                            <p>
+                                We serve our clients as if we were serving ourselves. We value their feedback and we use it to improve our work.
+                            </p>
+                        </div>
+                        <div>
+                            <h5><i class="fas fa-leaf"></i> Eco-Friendly Oriented</h5>
+                            <p>
+                                We carefully choose the best and most natural cleaning products that give amazing results.
+                            </p>
+                        </div>
+                        <div>
+                            <h5><i class="fas fa-leaf"></i> Expansion / Growth</h5>
+                            <p>
+                                We make ourselves known in the community; we create long term relations, while constantly expanding. Therefore, we are always bringing in more people to work for us.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--====== history of cleaning company ========-->
+        <div class="container">
+            <div class="cleaning-history-header">
+                <h2>History of Cleaning Company</h2>
+                <h5>Providing house and offices cleaning services for more than 10 years</h5>
+                <p>
+                    The Cleaning Company is widely recognized for our commitment to serving our customers while staying friendly to the environment.
+                    We have a history of excellence and dedication to our clients,
+                    providing professional and high-quality house cleaning services across America.
+                </p>
+            </div>
+            <div class="manifisto">
+                <p><i class="fas fa-book"></i> Franchising began in 1996 and has grown to include more than 215 locations across North America.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <p>
+                        The Cleaning Company is widely recognized for our commitment to serving our customers while staying friendly to the environment. We have a history of excellence and dedication to our clients, providing professional and quality house cleaning services across America.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <p>
+                        This quality commitment and reputation for excellent service attracted outside investors. In 2014, the company announced a majority acquisition by PNC Riverarch Capital. This exciting change didn't mean a complete overhaul:
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <p>
+                        The management team did not change and Steve continued on in his leadership position with the Board of Directors. We are excited to announce a new era of growth for both new and existing units under the guidance of PNC.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--====== history of cleaning company ========-->
+        
+        <!--===== satisfiction =====-->
+        <div class="satisfiction-wrapper">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="garuanteed-wrap">
+                            <h2>Satisfaction Guaranteed!</h2>
+                            <p>
+                                The experts at The Cleaning Company are committed to providing thorough house cleaning services for our customers nationwide.
+                            </p>
+                            <p>
+                                If you are not happy with any area we’ve cleaned, simply call within 24 hours and we will come back out and reclean it free of charge. This makes hiring Cleaning Company virtually risk free. Our maids are thoroughly screened through our rigorous recruitment process, and every one of them goes through our Maid University training process. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="satisfiction-stamp"><img src="./assets/imgs/shtamp.png" alt=""></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="garuantedd-wrap">
+                            <img src="./assets/imgs/about-page-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===== satisfiction =====-->
+        <div class="hire-us">
+            <div class="container">
+                <div class="hire-us-header">
+                    <h2>Why Hire Us?</h2>
+                    <p>
+                        Choose us because of our reputation for excellence. For more than 10 years, we've earned a name for quality and customer service.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="advantages-wrapper">
+                            <div class="icon"><i class="far fa-smile"></i></div>
+                            <h4>With Us, Your Satisfaction
+                                Is Guaranteed</h4>
+                                <p>
+                                    The experts at The Cleaning Company are committed to providing thorough house cleaning services for our valued customers nationwide.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="advantages-wrapper">
+                            <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                            <h4>Our Bonded & Insured
+                                Cleaning Team</h4>
+                                <p>
+                                    Our company is fully bonded and insured, which means you can have peace of mind when you hire us as your residential cleaning company. 
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="advantages-wrapper">
+                            <div class="icon"><i class="fas fa-users"></i></div>
+                            <h4>Our Teams Consist
+                                of Fully Trained Employees</h4>
+                                <p>
+                                    It means every individual goes through a thorough screening process, and then is trained in every aspect of our home cleaning services.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="advantages-wrapper">
+                            <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+                            <h4>Locally Owned Home
+                                Cleaning Services</h4>
+                                <p>
+                                    You should be able to enjoy peace of mind knowing that your home is in good hands, while focusing on things that matter more to you. 
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="advantages-wrapper">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <h4>Free Over the Phone
+                                Estimates</h4>
+                                <p>
+                                    Cleaning Company service is the key to keeping a beautiful home while making more time for yourself and the things you love most. 
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="advantages-wrapper">
+                            <div class="icon"><i class="fas fa-certificate"></i></div>
+                            <h4>We Guarantee
+                                Our Work</h4>
+                                <p>
+                                    Cleaning Company strives to provide the highest level of quality, service and value to each and every customer. If you are not satisfied, please inform us. 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--====== about us =======-->
+
+    <!--=========== footer ===========-->
+    <footer class="footer wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper first">
+                        <div class="top-img">
+                            <img src="./assets/imgs/footer-ribbon.png" alt="100% Guarantee">
+                        </div>
+                        <div>
+                            <p>
+                                We use natural and eco-friendly cleaning products and have a customer satisfaction
+                                guarantee.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Cleaning Services</h5>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-check"></i> Apartment Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Commercial Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Residential Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Move In / Move Out Cleaning Services</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Window Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Carper Cleaning/a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> After Renovation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Contact Information</h5>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> 3261 Anmoore Road Brooklyn, NY 11230
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-phone"></i> 800-123-4567
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <a href="mailto:info@fourthpyramidagcy.com?">
+                                    <i class="far fa-envelope"></i>officeone@youremail.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="far fa-clock"></i> 8:00 am - 10:00 pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer-wrapper">
+        <div class="container">
+            <div class="bottom-footer">
+                <div class="copywrite">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made
+                        with <i class="icon-heart" aria-hidden="true"></i> by <a
+                            href="https://www.fourthpyramidagcy.com/" class="myself" target="_blank">The Fourth
+                            Pyramid</a>
+                    </p>
+                </div>
+                <div class="footer-socialmedia">
+                    <ul class="socialmedia-ic">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========== footer ===========-->
+
+    <!--======= script files ======-->
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/jQuery 3.4.1.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.animateNumber.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

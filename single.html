@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Services - Blog</title>
+
+    <!--===== stylesheets ======-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!--===== preloader =========-->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary trans" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!--===== preloader =========-->
+
+    <!--======= header =========-->
+    <header class="header">
+        <div class="top-bar" :class="{active : isActive}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="topbar-left" id="topBarToggle">
+                            <ul class="contact-us">
+                                <li><i class="fas fa-map-marker-alt"></i> Brooklyn, NY 11230</li>
+                                <li><i class="far fa-clock"></i> 8:00 am - 10:00 pm</li>
+                                <li><i class="fas fa-phone-alt"></i> Call: 800-123-4567</li>
+                                <li><a href="mailto:info@fourthpyramidagcy.com?"><i
+                                            class="fas fa-phone-alt"></i>Email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="topbar-right">
+                            <div class="socialmedia">
+                                <ul class="socialmedia-ic">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-toggler reveal">
+            <div class="top-bar-toggler-btn" @click="toggleActive" :class="{active: isActive}">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="navigationbar-wrapper">
+            <div class="navigationbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"><img src="./assets/imgs/logo.png"
+                                alt="Cleaning service logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-around nav-items-wrap" id="navbarToggler">
+                            <ul class="navbar-nav mt-2 mt-lg-0">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Our Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contacts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--======= header =========-->
+
+    <!--===== breadcrumb ======-->
+    <nav class="bread-crumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="blog.html">blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">New Cleaning With Hydrogen Peroxide</li>
+            </ol>
+        </div>
+    </nav>
+    <!--===== breadcrumb ======-->
+
+    <div class="blog-page-header">
+        <div class="container">
+            <h2>Blog Posts</h2>
+        </div>
+    </div>
+
+    <section class="blog-grid single-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <div class="img-wrapper">
+                        <img src="./assets/imgs/blog-post-img-4.jpg" alt="">
+                    </div>
+                    <div class="post-preview-wrapper">
+                        <div class="post-date">
+                            <span class="date">16 December, 2019</span>
+                            <span class="comments-number">3 <i class="fas fa-comments"></i></span>
+                        </div>
+                        <h2 class="post-title">A Choose-Your-Own-Adventure Plan</h2>
+                        <div class="author">
+                            <strong>by Paul Johnson</strong>
+                        </div>
+                        <p>
+                            Hiring just the right housekeeper can be life-altering for the busy family. Now this may
+                            seem to
+                            be a little over-the-top, but I am serious. Think about your life-whether single, a couple
+                            or a
+                            family-you have no time. No time to keep your home as organized or clean as you would like.
+                            No
+                            time to do the smaller tidying jobs that would make a huge difference.
+
+                            Maybe you struggle to fold laundry, clean ovens and counter tops, or scrub bathrooms. Maybe
+                            you
+                            need to clean your house fast for a party, need a hotel maid to help scrub motel rooms, or
+                            are
+                            looking for a professional to help with hospital housekeeping.
+                        </p>
+                        <p>
+                            It seems cliched to say it, but often we let things slip through the cracks. We spend too
+                            much
+                            time thinking about them, too much energy worrying about them. You deserve a house cleaner
+                            or
+                            home maker to make your life easier. You deserve professional house cleaning, or a dedicated
+                            housekeeper.
+
+                            And here enters great housekeeping. Now to be realistic, all relationships whether working
+                            or
+                            personal, have a starting point, and with the right match, can grow into something much
+                            more. It
+                            is certainly so with a new housekeeper. You look for certain qualities in a person, offer
+                            them a
+                            job and hope that it was a good choice.
+
+                            went to the opinions of my friends. I asked each of them the same question. "What is the one
+                            quality that you would have to have to see when hiring a new housekeeper?" Below, I've
+                            distilled
+                            down their answers.
+                        </p>
+                        <ul class="tags">
+                            <li><a href="#">cleaning</a></li>
+                            <li><a href="#">service</a></li>
+                            <li><a href="#">maid</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <!--====== sidebar ========-->
+                    <aside class="blog-sidebar">
+                        <div class="sidebar-item categories">
+                            <h4>Post Categories</h4>
+                            <ul class="cat">
+                                <li><i class="fas fa-chevron-right"></i><a href="#"> Daily Inspiration (7)</a></li>
+                                <li><i class="fas fa-chevron-right"></i><a href="#"> Freelance (3)</a></li>
+                                <li><i class="fas fa-chevron-right"></i><a href="#"> Quotes (1)</a></li>
+                                <li><i class="fas fa-chevron-right"></i><a href="#"> Status (1)</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-item tags-wrapper">
+                            <h4>Popular tags</h4>
+                            <ul class="tags">
+                                <li><a href="#">cleaning</a></li>
+                                <li><a href="#">service</a></li>
+                                <li><a href="#">maid</a></li>
+                                <li><a href="#">housekeeping</a></li>
+                                <li><a href="#">window cleaner</a></li>
+                                <li><a href="#">maid cleaning</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-item featured-posts">
+                            <h4>Featured Posts</h4>
+                            <div class="post">
+                                <div class="img-wrapper">
+                                    <a href="single.html">
+                                        <img src="./assets/imgs/blog-post-img-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="post-date">
+                                    <span class="date">16 December, 2019</span>
+                                    <span class="comments-number">3 <i class="fas fa-comments"></i></span>
+                                </div>
+                                <div class="post-title">
+                                    <h6><a href="single.html">New Cleaning With Hydrogen Peroxide</a></h6>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="img-wrapper">
+                                    <a href="single.html">
+                                        <img src="./assets/imgs/blog-post-img-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="post-date">
+                                    <span class="date">16 December, 2019</span>
+                                    <span class="comments-number">3 <i class="fas fa-comments"></i></span>
+                                </div>
+                                <div class="post-title">
+                                    <a href="single.html">New Cleaning With Hydrogen Peroxide</a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!--====== sidebar ========-->
+                </div>
+            </div>
+            <!---========== comments section ==========-->
+            <div class="comments-wrap">
+                <div class="comments-header">
+                    <h2><span class="far fa-comments icon"></span> Comments <span class="number">1</span></h2>
+                </div>
+                <div class="comments-list">
+                    <ul>
+                        <li>
+                            <div class="comment-wrap">
+                                <div class="avatar"><i class="fas fa-user"></i></div>
+                                <div class="comment-body">
+                                    <div class="details">
+                                        <h6><span class="name">
+                                            by Paul Johnson</span></h6>
+                                        <span class="date">August 11, 2015 at 6:16 am</span>
+                                        <a href="#reply" class="reply">Reply</a>
+                                        <p class="the-comment">
+                                            Hi, this is a comment.
+                                            To delete a comment, just log in and view the post's comments. There you
+                                            will have the option to edit or delete them.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="sub-comment">
+                                <li>
+                                    <div class="comment-wrap">
+                                        <div class="avatar"><i class="fas fa-user"></i></div>
+                                        <div class="comment-body">
+                                            <div class="details">
+                                                <h6><span class="name">
+                                                    by Paul Johnson</span></h6>
+                                                <span class="date">August 11, 2015 at 6:16 am</span>
+                                                <a href="#reply" class="reply">Reply</a>
+                                                <p class="the-comment">
+                                                    Hi, this is a comment.
+                                                    To delete a comment, just log in and view the post's comments. There
+                                                    you will have the option to edit or delete them.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="add-comment" id="add-comment">
+                    <form action="#" method="post" class="comment-form" id="commentForm" role="form">
+                        <h4>Leave a Comment</h4>
+                        <div class="input-wrapper">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" name="email" placeholder="Email" class="form-control" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email" class="control-label">Add Comment :</label>
+                            <div class="">
+                                <textarea class="form-control" placeholder="Your Comment..." name="addComment" id="addComment" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button class="btn text-uppercase trans" type="submit" id="submitComment"><i
+                                class="fas fa-paper-plane"></i> Send Comment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========== footer ===========-->
+    <footer class="footer wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper first">
+                        <div class="top-img">
+                            <img src="./assets/imgs/footer-ribbon.png" alt="100% Guarantee">
+                        </div>
+                        <div>
+                            <p>
+                                We use natural and eco-friendly cleaning products and have a customer satisfaction
+                                guarantee.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Cleaning Services</h5>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-check"></i> Apartment Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Commercial Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Residential Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Move In / Move Out Cleaning Services</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Window Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Carper Cleaning/a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> After Renovation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Contact Information</h5>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> 3261 Anmoore Road Brooklyn, NY 11230
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-phone"></i> 800-123-4567
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <a href="mailto:info@fourthpyramidagcy.com?">
+                                    <i class="far fa-envelope"></i>officeone@youremail.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="far fa-clock"></i> 8:00 am - 10:00 pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer-wrapper">
+        <div class="container">
+            <div class="bottom-footer">
+                <div class="copywrite">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made
+                        with <i class="icon-heart" aria-hidden="true"></i> by <a
+                            href="https://www.fourthpyramidagcy.com/" class="myself" target="_blank">The Fourth
+                            Pyramid</a>
+                    </p>
+                </div>
+                <div class="footer-socialmedia">
+                    <ul class="socialmedia-ic">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========== footer ===========-->
+
+    <!--======= script files ======-->
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/jQuery 3.4.1.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.animateNumber.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

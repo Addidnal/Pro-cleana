@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Services - Blog</title>
+
+    <!--===== stylesheets ======-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!--===== preloader =========-->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary trans" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!--===== preloader =========-->
+
+    <!--======= header =========-->
+    <header class="header">
+        <div class="top-bar" :class="{active : isActive}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="topbar-left" id="topBarToggle">
+                            <ul class="contact-us">
+                                <li><i class="fas fa-map-marker-alt"></i> Brooklyn, NY 11230</li>
+                                <li><i class="far fa-clock"></i> 8:00 am - 10:00 pm</li>
+                                <li><i class="fas fa-phone-alt"></i> Call: 800-123-4567</li>
+                                <li><a href="mailto:info@fourthpyramidagcy.com?"><i
+                                            class="fas fa-phone-alt"></i>Email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="topbar-right">
+                            <div class="socialmedia">
+                                <ul class="socialmedia-ic">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-toggler reveal">
+            <div class="top-bar-toggler-btn" @click="toggleActive" :class="{active: isActive}">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="navigationbar-wrapper">
+            <div class="navigationbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"><img src="./assets/imgs/logo.png"
+                                alt="Cleaning service logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-around nav-items-wrap" id="navbarToggler">
+                            <ul class="navbar-nav mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Our Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contacts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--======= header =========-->
+
+    <!--===== breadcrumb ======-->
+    <nav class="bread-crumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+            </ol>
+        </div>
+    </nav>
+    <!--===== breadcrumb ======-->
+
+    <div class="services-header">
+        <h2>Our Services</h2>
+        <p>
+            At Cleaning Company Team, our highly trained, experienced, and skilled cleaning specialists offer thorough
+            and organized cleaning services for clients across USA.
+        </p>
+    </div>
+
+    <section class="services-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-1.html">
+                                <img src="./assets/imgs/service-img-1.jpg" alt="Apartment Cleaning">
+                            </a>
+                        </div>
+                        <h5>Apartment Cleaning</h5>
+                        <p class="prev">
+                            Cleaning Company offers a program designed to service residents of apartments and
+                            condominiums.
+                        </p>
+                        <a href="service-page-1.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-2.html">
+                                <img src="./assets/imgs/service-img-2.jpg" alt="House Cleaning">
+                            </a>
+                        </div>
+                        <h5>House Cleaning</h5>
+                        <p class="prev">
+                            For over 10 years we’ve performed housekeeping services according to the wishes of our
+                            clients.
+                        </p>
+                        <a href="service-page-2.html">Read More <i class="fas fa-play"></i> </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-3.html">
+                                <img src="./assets/imgs/service-img-3.jpg" alt="Move In / Move Out">
+                            </a>
+                        </div>
+                        <h5>Move In / Move Out</h5>
+                        <p class="prev">
+                            In fact, many people say that moving is one of the most stressful and exhausting life
+                            experiences.
+                        </p>
+                        <a href="service-page-3.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-4.html">
+                                <img src="./assets/imgs/service-img-4.jpg" alt="Сarpet Сleaning">
+                            </a>
+                        </div>
+                        <h5>Сarpet Сleaning</h5>
+                        <p class="prev">
+                            When you choose us, you get a deeper clean, faster-drying carpets and a healthier home. 
+                        </p>
+                        <a href="service-page-4.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-5.html">
+                                <img src="./assets/imgs/service-img-5.jpg" alt="After Renovation">
+                            </a>
+                        </div>
+                        <h5>After Renovation</h5>
+                        <p class="prev">
+                            Anyone who has done a renovation project knows the mess that comes with it. 
+                        </p>
+                        <a href="service-page-5.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-6.html">
+                                <img src="./assets/imgs/service-img-6.jpg" alt="Curtain Cleaning">
+                            </a>
+                        </div>
+                        <h5>Curtain Cleaning</h5>
+                        <p class="prev">
+                            We will take down uninstall your curtains and dry-clean right on the spot! 
+                        </p>
+                        <a href="service-page-6.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-7.html">
+                                <img src="./assets/imgs/service-img-7.jpg" alt="Window Cleaning">
+                            </a>
+                        </div>
+                        <h5>Window Cleaning</h5>
+                        <p class="prev">
+                            Indulge in high-quality window cleaning from bonded professionals.  
+                        </p>
+                        <a href="service-page-7.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-8.html">
+                                <img src="./assets/imgs/service-img-8.jpg" alt="Commercial Cleaning">
+                            </a>
+                        </div>
+                        <h5>Commercial Cleaning</h5>
+                        <p class="prev">
+                            Anyone who has done a renovation project knows the mess that comes with it.  
+                        </p>
+                        <a href="service-page-8.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-9.html">
+                                <img src="./assets/imgs/service-img-9.jpg" alt="Residential Cleaning">
+                            </a>
+                        </div>
+                        <h5>Residential Cleaning</h5>
+                        <p class="prev">
+                            We will take down uninstall your curtains and dry-clean right on the spot!  
+                        </p>
+                        <a href="service-page-9.html">Read More <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="our-ser-prices">
+                <div class="our-prices-header">
+                    <h4>Our Prices</h4>
+                    <p>
+                        Outstanding cleaning services with flat rate pricing. No hidden fees. No surprises.
+                    </p>
+                </div>
+                <div class="owl-carousel owl-theme" id="servicePrice">
+                    <div class="price-card">
+                        <h3>Studio</h3>
+                        <div class="price">
+                            <h2><span>$</span>119</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">Order Now</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>One Bedroom</h3>
+                        <div class="price">
+                            <h2><span>$</span>129</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">Order Now</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Two Bedrooms</h3>
+                        <div class="price">
+                            <h2><span>$</span>139</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">Order Now</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Three Bedrooms</h3>
+                        <div class="price">
+                            <h2><span>$</span>189</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">Order Now</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Four Bedrooms</h3>
+                        <div class="price">
+                            <h2><span>$</span>200</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">Order Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========== footer ===========-->
+    <footer class="footer wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper first">
+                        <div class="top-img">
+                            <img src="./assets/imgs/footer-ribbon.png" alt="100% Guarantee">
+                        </div>
+                        <div>
+                            <p>
+                                We use natural and eco-friendly cleaning products and have a customer satisfaction
+                                guarantee.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Cleaning Services</h5>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-check"></i> Apartment Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Commercial Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Residential Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Move In / Move Out Cleaning Services</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Window Cleaning</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Carper Cleaning/a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> After Renovation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Contact Information</h5>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> 3261 Anmoore Road Brooklyn, NY 11230
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-phone"></i> 800-123-4567
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <a href="mailto:info@fourthpyramidagcy.com?">
+                                    <i class="far fa-envelope"></i>officeone@youremail.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="far fa-clock"></i> 8:00 am - 10:00 pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer-wrapper">
+        <div class="container">
+            <div class="bottom-footer">
+                <div class="copywrite">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made
+                        with <i class="icon-heart" aria-hidden="true"></i> by <a
+                            href="https://www.fourthpyramidagcy.com/" class="myself" target="_blank">The Fourth
+                            Pyramid</a>
+                    </p>
+                </div>
+                <div class="footer-socialmedia">
+                    <ul class="socialmedia-ic">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========== footer ===========-->
+
+    <!--======= script files ======-->
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/jQuery 3.4.1.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.animateNumber.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

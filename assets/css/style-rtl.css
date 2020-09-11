@@ -1,0 +1,79 @@
+.our-services .card .card-body .ser-list {
+  text-align: right;
+}
+.our-services .card .card-body .ser-list li i {
+  margin-left: 5px;
+}
+
+.our-services .services-slider-navs {
+  flex-flow: row-reverse;
+}
+
+.about-us .about-us-header {
+  text-align: right;
+}
+.about-us .about-us-header .about-us-navs li a {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.about-us .about-us-info {
+  text-align: right;
+}
+
+.right-wrap {
+  text-align: right;
+}
+.right-wrap div p {
+  margin: 0 38px 1rem;
+}
+
+.cleaning-news-wrapper #cleaningNews .card .card-body {
+  text-align: right;
+}
+
+.products-info-wrapper {
+  text-align: right;
+}
+
+.footer .footer-colum-wrapper {
+  text-align: right;
+}
+
+.some-info-wrapper .some-info {
+  text-align: right;
+}
+
+.our-mission .info {
+  text-align: right;
+}
+
+.blog-grid .post-preview-wrapper {
+  text-align: right;
+}
+
+.blog-sidebar .sidebar-item {
+  text-align: right;
+}
+
+.address-wrapper {
+  text-align: right;
+}
+
+.contact-us-wrapper .form-wrapper .submit-btn {
+  margin-left: auto;
+  display: block;
+}
+
+.comment-body {
+  text-align: right;
+}
+
+.comment-form {
+  text-align: right;
+}
+
+.order-form-wrapper {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style-rtl.css.map */

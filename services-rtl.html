@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Services</title>
+
+    <!--===== stylesheets ======-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-rtl.css">
+</head>
+
+<body>
+
+    <!--===== preloader =========-->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary trans" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="shadow"></div>
+    </div>
+
+    <!--===== preloader =========-->
+
+    <!--======= header =========-->
+    <header class="header">
+        <div class="top-bar" :class="{active : isActive}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="topbar-left" id="topBarToggle">
+                            <ul class="contact-us">
+                                <li><i class="fas fa-map-marker-alt"></i> Brooklyn, NY 11230</li>
+                                <li><i class="far fa-clock"></i> 8:00am - 10:00pm</li>
+                                <li><i class="fas fa-phone-alt"></i> إتصل: 800-123-4567</li>
+                                <li><a href="mailto:info@fourthpyramidagcy.com?"><i class="far fa-envelope"></i>إرسل رساله</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="topbar-right">
+                            <div class="socialmedia">
+                                <ul class="socialmedia-ic">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-toggler reveal">
+            <div class="top-bar-toggler-btn" @click="toggleActive" :class="{active: isActive}">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="navigationbar-wrapper">
+            <div class="navigationbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index-rtl.html"><img src="./assets/imgs/logo.png"
+                                alt="Cleaning service logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-around nav-items-wrap" id="navbarToggler">
+                            <ul class="navbar-nav mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index-rtl.html">الرئيسية <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us-rtl.html">عننا</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog-rtl.html">المدونه</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services-rtl.html">الخدمات</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us-rtl.html">تواصل معنا</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials-rtl.html">اراء العملاء</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--======= header =========-->
+
+    
+    <!--===== breadcrumb ======-->
+    <nav class="bread-crumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"> الرئيسية </a></li>
+                <li class="breadcrumb-item active" aria-current="page"> الخدمات </li>
+            </ol>
+        </div>
+    </nav>
+    <!--===== breadcrumb ======-->
+
+    
+    <div class="services-header">
+        <h2>الخدمات</h2>
+        <p>
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. 
+        </p>
+    </div>
+
+    <section class="services-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-1.html">
+                                <img src="./assets/imgs/service-img-1.jpg" alt="تنظيف الشقق">
+                            </a>
+                        </div>
+                        <h5>تنظيف الشقق</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                        </p>
+                        <a href="service-page-1.html">إقرأ المزيد <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-2.html">
+                                <img src="./assets/imgs/service-img-2.jpg" alt="التنظيف السكني">
+                            </a>
+                        </div>
+                        <h5>التنظيف السكني</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+
+                        </p>
+                        <a href="service-page-2.html">إقراء المزيد <i class="fas fa-play"></i> </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-3.html">
+                                <img src="./assets/imgs/service-img-3.jpg" alt=" التنظيف في حالة الإنتقال">
+                            </a>
+                        </div>
+                        <h5> التنظيف في حالة الإنتقال</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+
+                        </p>
+                        <a href="service-page-3.html">إقرأ المزيد <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-4.html">
+                                <img src="./assets/imgs/service-img-4.jpg" alt="تنظيف السجاد">
+                            </a>
+                        </div>
+                        <h5>تنظيف السجاد</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                        </p>
+                        <a href="service-page-4.html">إقراء المزيد <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-5.html">
+                                <img src="./assets/imgs/service-img-5.jpg" alt="تنظيف بعد الصيانه">
+                            </a>
+                        </div>
+                        <h5>تنظيف بعد الصيانه</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+ 
+                        </p>
+                        <a href="service-page-5.html">إقرأ المزيد <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-6.html">
+                                <img src="./assets/imgs/service-img-6.jpg" alt="تنظيف الستائر">
+                            </a>
+                        </div>
+                        <h5>تنظيف الستائر</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                        </p>
+                        <a href="service-page-6.html">إقراء المزيد<i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-7.html">
+                                <img src="./assets/imgs/service-img-7.jpg" alt="Window Cleaning">
+                            </a>
+                        </div>
+                        <h5>تنظيف النوافذ</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                        </p>
+                        <a href="service-page-7.html">إقراء المزيد <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-8.html">
+                                <img src="./assets/imgs/service-img-8.jpg" alt="Commercial Cleaning">
+                            </a>
+                        </div>
+                        <h5>تنظيف تجاري</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                        </p>
+                        <a href="service-page-8.html">ٌاقرأ المزيد <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="ser-card-wrap">
+                        <div class="img-wrapper">
+                            <a href="service-page-9.html">
+                                <img src="./assets/imgs/service-img-9.jpg" alt="Residential Cleaning">
+                            </a>
+                        </div>
+                        <h5>التنظيف السكني</h5>
+                        <p class="prev">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                        </p>
+                        <a href="service-page-9.html">إقرأ المزيد <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="our-ser-prices">
+                <div class="our-prices-header">
+                    <h4>الأسعار</h4>
+                    <p>
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
+                    </p>
+                </div>
+                <div class="owl-carousel owl-theme" id="servicePrice">
+                    <div class="price-card">
+                        <h3>ستوديو</h3>
+                        <div class="price">
+                            <h2><span>$</span>119</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">أطلب الأن</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>غرفه</h3>
+                        <div class="price">
+                            <h2><span>$</span>129</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">أطلب الأن</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>غرفتين</h3>
+                        <div class="price">
+                            <h2><span>$</span>139</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">أطلب الأن</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>ثلاث غرف</h3>
+                        <div class="price">
+                            <h2><span>$</span>189</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">أطلب الأن</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>أربع غرف</h3>
+                        <div class="price">
+                            <h2><span>$</span>200</h2>
+                            <small>Flat Rate</small>
+                        </div>
+                        <ul>
+                            <li><span>Apartments</span></li>
+                            <li><span>Estimated Time - 2 hours</span></li>
+                        </ul>
+                        <a href="order-form.html" class="btn">أطلب الأن</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--=========== footer ===========-->
+    <footer class="footer wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper first">
+                        <div class="top-img">
+                            <img src="./assets/imgs/footer-ribbon.png" alt="100% Guarantee">
+                        </div>
+                        <div>
+                            <p>
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>Cleaning Services</h5>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف الشقق</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف تجاري</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> التنظيف السكني</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> التنظيف في حالة الإنتقال</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف النوافذ</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف السجاد</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> تنظيف بعد الصيانه</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-colum-wrapper">
+                        <h5>تواصل معنا</h5>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> 3261 Anmoore Road Brooklyn, NY 11230
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-phone"></i> 800-123-4567
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <a href="mailto:info@fourthpyramidagcy.com?">
+                                    <i class="far fa-envelope"></i>officeone@youremail.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="far fa-clock"></i> 8:00am - 10:00pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer-wrapper">
+        <div class="container">
+            <div class="bottom-footer">
+                <div class="copywrite">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made
+                        with <i class="icon-heart" aria-hidden="true"></i> by <a
+                            href="https://www.fourthpyramidagcy.com/" class="myself" target="_blank">The Fourth
+                            Pyramid</a>
+                    </p>
+                </div>
+                <div class="footer-socialmedia">
+                    <ul class="socialmedia-ic">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========== footer ===========-->
+
+    <!--======= script files ======-->
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/jQuery 3.4.1.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.animateNumber.min.js"></script>
+    <script src="./assets/js/main-rtl.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
