@@ -24,6 +24,7 @@
         animation: rotate-border 0.75s linear infinite;
         background-color: #fff;
     }
+
     .shadow {
         width: 5rem;
         height: 2px;
@@ -56,11 +57,13 @@
         padding: 4px 0;
         filter: blur(5px);
     }
+
     50% {
         padding: 2px 0;
         filter: blur(4px);
     }
-    100%{
+
+    100% {
         padding: 4px 0;
         filter: blur(5px);
     }
@@ -76,6 +79,7 @@
     color: #899198;
     display: block;
     @include transitionMe(all .3s ease);
+
     .topbar-left {
         padding: 10px 0 0;
         line-height: 39px;
@@ -104,16 +108,20 @@
             li {
                 display: inline-block;
                 margin-right: 20px;
+
                 i {
                     color: $iconColor;
                     margin: 5px;
                 }
+
                 a {
                     color: #899198;
                     @include transitionMe(color .3s ease);
+
                     i {
                         margin: 0 5px;
                     }
+
                     &:hover {
                         color: $gcolor;
                         text-decoration: none;
@@ -150,60 +158,93 @@
         }
     }
 }
+
 .header {
     .top-bar-toggler {
         background-color: #f9f9fa;
         display: none;
         width: 100%;
+
         .top-bar-toggler-btn {
             font-size: 1.4rem;
             padding: 0 23px;
             text-align: center;
             cursor: pointer;
+
             i {
                 @include transitionMe(transform .3s ease);
             }
+
             &.active {
                 i {
                     @include rotateMe(180deg);
                 }
             }
         }
+
         &.reveal {
             @media(max-width: 415px) {
                 display: block;
             }
         }
     }
+
     .nav-items-wrap {
         ul {
             li {
                 margin: 0 11px;
                 font-size: 1.2rem;
+
                 a {
                     @include transitionMe(color .3s ease);
+
                     &.active {
                         color: $gcolor;
                         line-height: 2.3;
                     }
                 }
+
                 &:hover {
                     a {
                         color: $gcolor !important;
                     }
                 }
 
+                &.lang {
+                    pointer-events: none;
+
+                    &:hover {
+                        a {
+                            color: rgba(0, 0, 0, 0.5) !important;
+                        }
+                    }
+
+                    .language {
+                        line-height: 2.3;
+                        pointer-events: all;
+                        color: rgba(0, 0, 0, 0.5);
+
+                        &:hover {
+                            color: #4ba0e8 !important;
+                        }
+
+                    }
+                }
+
             }
         }
     }
+
     .navigationbar-wrapper {
         height: 88px;
-        .navigationbar{
+
+        .navigationbar {
             @include transitionMe(all .3s ease);
             background-color: #fff;
             position: relative;
             z-index: 5;
             box-shadow: 0 9px 17px 0px rgba(85, 85, 85, 0.16);
+
             &.sticky {
                 position: fixed;
                 z-index: 5;
@@ -211,51 +252,60 @@
                 width: 100%;
                 top: 0;
                 box-shadow: 0 0 15px 5px rgba(85, 85, 85, 0.16);
+
                 .navbar {
-                    padding-top:0 ;
+                    padding-top: 0;
                     padding-bottom: 0;
                 }
             }
+
             .navbar {
                 @include transitionMe(all .3s ease);
             }
         }
     }
 }
+
 @media (max-width: $breakpoint-tablet) {
-    .top-bar{
+    .top-bar {
         .topbar-left {
             font-size: 13px;
+
             .contact-us {
                 li {
                     margin-right: 9px;
                 }
-            } 
-        } 
+            }
+        }
     }
 
     .top-bar .topbar-right .socialmedia .socialmedia-ic li {
         margin-right: 10px;
+
         a {
             font-size: 17px;
         }
     }
 
 }
+
 @media(max-width: 415px) {
     .top-bar {
         height: 0;
         overflow: hidden;
+
         &.active {
             height: 14rem;
         }
+
         .topbar-left {
             font-size: 14px;
+
             .contact-us {
                 li {
                     display: block;
                 }
-            } 
-        } 
+            }
+        }
     }
 }

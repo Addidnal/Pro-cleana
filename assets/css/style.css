@@ -57,6 +57,10 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 /************* multi usable classes *****************/
 /*********** imported components ********/
 /******** preloader *******/
@@ -268,6 +272,20 @@ a:hover {
 }
 .header .nav-items-wrap ul li:hover a {
   color: #5cc28b !important;
+}
+.header .nav-items-wrap ul li.lang {
+  pointer-events: none;
+}
+.header .nav-items-wrap ul li.lang:hover a {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.header .nav-items-wrap ul li.lang .language {
+  line-height: 2.3;
+  pointer-events: all;
+  color: rgba(0, 0, 0, 0.5);
+}
+.header .nav-items-wrap ul li.lang .language:hover {
+  color: #4ba0e8 !important;
 }
 .header .navigationbar-wrapper {
   height: 88px;

@@ -9,6 +9,7 @@
     font-family: Muli;
     src: url(../fonts/Muli-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: heebo;
     src: url(../fonts/Heebo-VariableFont_wght.ttf);
@@ -39,6 +40,7 @@
     -o-transform: rotate($r);
     transform: rotate($r);
 }
+
 @mixin rotatexMe($rx) {
     -webkit-transform: rotateX($rx);
     -moz-transform: rotateX($rx);
@@ -53,7 +55,7 @@
     transform-origin: $o;
 }
 
-@mixin translateMe( $g, $g2) {
+@mixin translateMe($g, $g2) {
     -webkit-transform: translate($g, $g2);
     -moz-transform: translate($g, $g2);
     -o-transform: translate($g, $g2);
@@ -94,15 +96,16 @@
 
 /************* multi usable classes *****************/
 body {
-    font-family: heebo,Muli,nunito,Tahoma,Arial;
+    font-family: heebo, Muli, nunito, Tahoma, Arial;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: Muli,nunito, Arial, Helvetica, sans-serif;
+    font-family: Muli, nunito, Arial, Helvetica, sans-serif;
     font-weight: 340;
     text-transform: capitalize;
     color: #3d4c58;
@@ -118,19 +121,28 @@ h6 {
 .trans {
     @include transitionMe(all .3s ease-in-out);
 }
+
 $gcolor: #5cc28b;
 $iconColor:#6fbf52;
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 376px;
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    color:#899198
+    color: #899198
 }
+
 a:hover {
     text-decoration: none;
 }
+
+img {
+    width: 100%;
+}
+
 /************* multi usable classes *****************/
 
 /*********** imported components ********/
